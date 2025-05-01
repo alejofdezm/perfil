@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de Gabriel Alejandro Fernández Mora, Full Stack Developer especializado en .NET, React, Ionic y AI.">
-    <meta name="keywords" content="Full Stack Developer, Mobile Development, Artificial Intelligence, Freelance, Costa Rica">
+    <meta name="description" content="Asesoría tecnológica, consultoría web y desarrollo de software a medida en Costa Rica. Contacta a Gabriel Fernández Mora, Full Stack Developer con 12+ años de experiencia.">
+    <meta name="keywords" content="asesoría tecnológica, consultoría web, desarrollo de software a medida, full stack developer, Costa Rica, .NET, React, AWS, AI, freelance">
     <meta name="author" content="Gabriel Alejandro Fernández Mora">
-    <title>Gabriel Fernández Mora | Full Stack Developer</title>
+    <!-- Open Graph y Twitter Cards -->
+    <meta property="og:title" content="Gabriel Fernández Mora | Asesoría Tecnológica y Desarrollo de Software a Medida">
+    <meta property="og:description" content="Soluciones tecnológicas personalizadas: asesoría, consultoría web y desarrollo de software a medida en Costa Rica. ¡Contáctame hoy!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alejofdezm.github.io/perfil/">
+    <meta property="og:image" content="https://alejofdezm.github.io/perfil/profile-pic.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gabriel Fernández Mora | Asesoría Tecnológica y Desarrollo de Software a Medida">
+    <meta name="twitter:description" content="Soluciones tecnológicas personalizadas: asesoría, consultoría web y desarrollo de software a medida en Costa Rica. ¡Contáctame hoy!">
+    <meta name="twitter:image" content="https://alejofdezm.github.io/perfil/profile-pic.png">
+    <title>Gabriel Fernández Mora | Asesoría Tecnológica y Desarrollo de Software a Medida en Costa Rica</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,6 +28,7 @@
         <ul class="nav-links">
             <li><a href="#home">Inicio</a></li>
             <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#services">Servicios</a></li>
             <li><a href="#experience">Experiencia</a></li>
             <li><a href="#skills">Habilidades</a></li>
             <li><a href="#education">Educación</a></li>
@@ -34,10 +45,10 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <img src="profile-pic.png" alt="Gabriel Alejandro Fernández Mora" class="profile-pic">
+            <img src="profile-pic.png" alt="Gabriel Alejandro Fernández Mora, Full Stack Developer" class="profile-pic">
             <h1>Gabriel Alejandro Fernández Mora</h1>
-            <h2>IT Consultant | Full Stack Developer | Artificial Intelligence | Machine Learning | Azure DevOps | AWS | Docker | Microservices | C# | Python | PHP | JavaScript | Linux | Technical Leader | Project Manager</h2>
-            <p>Construyendo soluciones innovadoras con más de 12 años de experiencia en .NET, React, Ionic y AWS.</p>
+            <h2>Soluciones Tecnológicas a Medida: Asesoría, Consultoría Web y Desarrollo de Software</h2>
+            <p>Transforma tu negocio con más de 12 años de experiencia en .NET, React, Ionic y AWS. ¡Hagamos realidad tus ideas!</p>
             <a href="#contact" class="cta-button">Contáctame</a>
         </div>
     </section>
@@ -56,35 +67,69 @@
         <p>Me apasiona el aprendizaje continuo, la programación y el uso de tecnologías emergentes para resolver desafíos del mundo real. Mi objetivo es impulsar la innovación y entregar soluciones impactantes como consultor tecnológico y desarrollador de software.</p>
     </section>
 
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Mis Servicios</h2>
+        <div class="services-grid">
+            <article class="service">
+                <i class="fas fa-laptop-code service-icon"></i>
+                <h3>Asesoría Tecnológica</h3>
+                <p>Te ayudo a tomar decisiones estratégicas para implementar soluciones tecnológicas que optimicen tu negocio, desde la elección de herramientas hasta la planificación de proyectos.</p>
+                <a href="#contact" class="service-cta">Conversemos</a>
+            </article>
+            <article class="service">
+                <i class="fas fa-globe service-icon"></i>
+                <h3>Consultoría Web</h3>
+                <p>Optimizo tu presencia digital con sitios web modernos y funcionales usando tecnologías como Joomla, WordPress y frameworks avanzados como React y Laravel.</p>
+                <a href="#contact" class="service-cta">Conversemos</a>
+            </article>
+            <article class="service">
+                <i class="fas fa-code service-icon"></i>
+                <h3>Desarrollo de Software a Medida</h3>
+                <p>Creo aplicaciones personalizadas que se ajustan a las necesidades específicas de tu empresa, utilizando tecnologías como .NET, Node.js, Python y más.</p>
+                <a href="#contact" class="service-cta">Conversemos</a>
+            </article>
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience" class="section">
         <h2>Experiencia Profesional</h2>
         <div class="timeline">
-            <div class="job">
+            <article class="job">
                 <h3>Universidad Nacional de Costa Rica</h3>
                 <p><strong>Lecturer - Mobile Application Development</strong> | Oct 2024 - Presente</p>
                 <ul>
                     <li>Enseño desarrollo de aplicaciones móviles híbridas con Ionic y React.</li>
                     <li>Diseño currículos prácticos integrando frameworks modernos y metodologías ágiles.</li>
                 </ul>
-            </div>
-            <div class="job">
+            </article>
+            <article class="job">
                 <h3>UNED Costa Rica</h3>
                 <p><strong>Lecturer - Systems Development</strong> | 2023 - Presente</p>
                 <ul>
                     <li>Imparto cursos de Lógica Algorítmica y Sistemas Operativos.</li>
                     <li>Desarrollo materiales para aprendizaje remoto.</li>
                 </ul>
-            </div>
-            <div class="job">
+            </article>
+            <article class="job">
                 <h3>Banco LAFISE</h3>
                 <p><strong>Backend Developer</strong> | 2023 - Presente</p>
                 <ul>
                     <li>Desarrollo aplicaciones financieras con AWS, .NET y Node.js.</li>
                     <li>Integro productos de remesas regionales mediante APIs.</li>
                 </ul>
-            </div>
-            <div class="job">
+            </article>
+            <article class="job">
+                <h3>Cetrux Soluciones</h3>
+                <p><strong>Consultor y Asesor Tecnológico</strong> | 2014 - Presente</p>
+                <ul>
+                    <li>Brindo asesoría en gestión y administración de servidores, garantizando alta disponibilidad y rendimiento.</li>
+                    <li>Implemento medidas de seguridad para proteger sistemas críticos y datos sensibles.</li>
+                    <li>Lidero la puesta en marcha de campus de e-learning, incluyendo plataformas como Moodle, para instituciones educativas.</li>
+                </ul>
+            </article>
+            <article class="job">
                 <h3>Banco Central de Costa Rica</h3>
                 <p><strong>Full Stack Developer & Technical Lead</strong> | 2017 - 2023</p>
                 <ul>
@@ -92,7 +137,7 @@
                     <li>Rediseñé cálculos de indicadores económicos, logrando un 97% de mejora en ejecución.</li>
                     <li>Lideré migración de sistemas legacy a .NET Core y ReactJS.</li>
                 </ul>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -214,46 +259,56 @@
     <section id="projects" class="section">
         <h2>Proyectos Destacados</h2>
         <div class="projects-grid">
-            <div class="project">
+            <article class="project">
                 <h3>Optimización de Procesamiento Contable</h3>
                 <p>Reduje tiempos de procesamiento en un 70% en el Banco Central de Costa Rica mediante migraciones tecnológicas y optimización de arquitectura con SQL, .NET y Redis.</p>
-            </div>
-            <div class="project">
+                <a href="#contact" class="project-cta">¿Necesitas optimizar tu sistema? Contáctame</a>
+            </article>
+            <article class="project">
                 <h3>Mejora de Cálculos Económicos</h3>
                 <p>Rediseñé el cálculo de indicadores económicos, mejorando los tiempos de ejecución en un 97% al resolver problemas de rendimiento en bases de datos y mejorar la disponibilidad de datos.</p>
-            </div>
-            <div class="project">
+                <a href="#contact" class="project-cta">¿Buscas mejorar rendimiento? Contáctame</a>
+            </article>
+            <article class="project">
                 <h3>Transformación Digital</h3>
                 <p>Lideré la migración de sistemas legacy a plataformas modernas centradas en el usuario con .NET Core y ReactJS, mejorando significativamente la experiencia de usuario y la confiabilidad del sistema.</p>
-            </div>
-            <div class="project">
+                <a href="#contact" class="project-cta">¿Listo para modernizar tu sistema? Contáctame</a>
+            </article>
+            <article class="project">
                 <h3>App Móvil Híbrida</h3>
                 <p>Desarrollé aplicaciones móviles para PYMES con Ionic y React, incluyendo funcionalidades como ubicaciones en tiempo real, registro de productos y análisis en tiempo real.</p>
-            </div>
-            <div class="project">
+                <a href="#contact" class="project-cta">¿Necesitas una app móvil? Contáctame</a>
+            </article>
+            <article class="project">
                 <h3>Modelo de Machine Learning</h3>
                 <p>Creé e integré un modelo de predicción con Python y TensorFlow para analizar comportamientos de ventas de productos y sus ganancias sectorizadas.</p>
-            </div>
-            <div class="project">
+                <a href="#contact" class="project-cta">¿Quieres implementar IA? Contáctame</a>
+            </article>
+            <article class="project">
                 <h3>Despliegue de Sitios Web con Joomla y WordPress</h3>
                 <p>Configuré y diseñé sitios web para clientes utilizando Joomla y WordPress, desde la instalación hasta la personalización completa.</p>
-            </div>
-            <div class="project">
+                <a href="#contact" class="project-cta">¿Necesitas un sitio web? Contáctame</a>
+            </article>
+            <article class="project">
                 <h3>Implementación de Moodle en AWS para E-Learning</h3>
                 <p>Configuré servidores en AWS para desplegar sistemas e-learning como Moodle, optimizando el acceso para instituciones educativas.</p>
-            </div>
-            <div class="project">
+                <a href="#contact" class="project-cta">¿Buscas una solución e-learning? Contáctame</a>
+            </article>
+            <article class="project">
                 <h3>Desarrollo de Componentes para Odoo</h3>
                 <p>Creé componentes personalizados para Odoo, añadiendo funcionalidades específicas a módulos existentes para empresas.</p>
-            </div>
-            <div class="project">
+                <a href="#contact" class="project-cta">¿Necesitas personalizar Odoo? Contáctame</a>
+            </article>
+            <article class="project">
                 <h3>Despliegue de Repositorios OJS y DSpace</h3>
                 <p>Implementé sistemas de repositorios didácticos como OJS y DSpace para universidades, facilitando la gestión de publicaciones académicas.</p>
-            </div>
-            <div class="project">
+                <a href="#contact" class="project-cta">¿Quieres un repositorio académico? Contáctame</a>
+            </article>
+            <article class="project">
                 <h3>Soporte y Mantenimiento de Servidores Linux</h3>
                 <p>Proporcioné soporte técnico y mantenimiento a servidores Linux, asegurando alta disponibilidad y seguridad para aplicaciones críticas.</p>
-            </div>
+                <a href="#contact" class="project-cta">¿Necesitas soporte para servidores? Contáctame</a>
+            </article>
         </div>
     </section>
 
@@ -278,6 +333,7 @@
             <a href="https://www.linkedin.com/in/gfernandezmora/" target="_blank">LinkedIn</a>
             <a href="https://github.com/alejofdezm/" target="_blank">GitHub</a>
             <a href="https://www.udemy.com/user/gabriel-fernandez-mora/" target="_blank">Udemy</a>
+            <a href="https://alejofdezm.github.io/perfil/">Volver al inicio</a>
         </div>
     </footer>
 

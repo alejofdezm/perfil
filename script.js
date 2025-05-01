@@ -7,32 +7,42 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('toggle');
 });
 
-// Smooth scroll for nav links
+// Smooth scroll for nav links with animation trigger
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+
+        // Desplazamiento suave
+        targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
+
+        // Forzar la visibilidad de la sección para activar la animación
+        setTimeout(() => {
+            targetSection.classList.add('visible');
+        }, 100);
     });
 });
 
-// Fade-in animation on scroll
+// Fade-in animation on scroll with IntersectionObserver
 const sections = document.querySelectorAll('.section');
 const options = {
-    threshold: 0.2
+    threshold: 0.2,
+    rootMargin: '0px 0px -10% 0px'
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-            observer.unobserve(entry.target);
+            entry.target.classList.add('visible');
+            // No desobservamos para que la animación se reactive al volver a la sección
         }
     });
 }, options);
 
 sections.forEach(section => {
-    section.classList.add('fade-out');
     observer.observe(section);
 });
