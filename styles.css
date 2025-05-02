@@ -11,6 +11,42 @@ body {
     line-height: 1.6;
 }
 
+/* Language Selector */
+.language-selector {
+    position: fixed;
+    top: 85px; /* Center vertically */
+    right: 20px;
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    background: #1a2a44;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.language-selector:hover {
+    transform: translateY(-50%) scale(1.05); /* Adjust for hover while maintaining vertical centering */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.language-selector i {
+    color: #00d4ff;
+    font-size: 1.2rem;
+}
+
+#language-switch {
+    opacity: 0; /* Hide the select element visually */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
 /* Navbar */
 .navbar {
     background: #1a2a44;
@@ -500,7 +536,8 @@ footer {
     .nav-links {
         display: none;
         flex-direction: column;
-        position: absolute;
+        z-index: 1002;
+        position: relative;
         top: 60px;
         left: 0;
         width: 100%;
@@ -586,5 +623,14 @@ footer {
 
     .project h3 {
         font-size: 1.2rem;
+    }
+
+    .language-selector {
+        right: 15px;
+        padding: 4px 8px;
+    }
+
+    .language-selector i {
+        font-size: 1rem;
     }
 }

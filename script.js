@@ -1,3 +1,38 @@
+// Function to get the stored language preference
+function getStoredLanguage() {
+    return localStorage.getItem('preferredLanguage');
+}
+
+// Function to set the language preference
+function setStoredLanguage(lang) {
+    localStorage.setItem('preferredLanguage', lang);
+}
+
+// Function to redirect based on language
+function redirectToLanguage(lang) {
+    const currentPath = window.location.pathname;
+    if (lang === 'es' && !currentPath.includes('index.html')) {
+        window.location.href = 'index.html';
+    } else if (lang === 'en' && !currentPath.includes('index-en.html')) {
+        window.location.href = 'index-en.html';
+    }
+}
+
+// Detect language and redirect on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const storedLang = getStoredLanguage();
+    const userLang = navigator.language || navigator.userLanguage;
+
+    // If there's a stored language preference, use it
+    if (storedLang) {
+        redirectToLanguage(storedLang);
+    } else {
+        // Otherwise, detect browser language
+        const lang = userLang.startsWith('es') ? 'es' : 'en';
+        redirectToLanguage(lang);
+    }
+});
+
 // Toggle mobile menu
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
@@ -45,4 +80,12 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 sections.forEach(section => {
     observer.observe(section);
+});
+
+// Language switcher
+const languageSwitch = document.getElementById('language-switch');
+languageSwitch.addEventListener('change', (e) => {
+    const selectedLang = e.target.value;
+    setStoredLanguage(selectedLang); // Save the user's preference
+    redirectToLanguage(selectedLang); // Redirect to the selected language
 });
