@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alejofdezm.github.io/perfil/sitemap.xml
