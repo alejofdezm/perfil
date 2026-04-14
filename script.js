@@ -87,10 +87,12 @@ window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
         navbar.style.padding = '0.8rem 5%';
-        navbar.style.background = 'rgba(10, 15, 28, 0.95)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.1)';
     } else {
         navbar.style.padding = '1.2rem 5%';
-        navbar.style.background = 'rgba(10, 15, 28, 0.8)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.9)';
+        navbar.style.boxShadow = 'none';
     }
 });
 
